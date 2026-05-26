@@ -1,1 +1,15 @@
-const CACHE_NAME='panel-ai-v1';const ASSETS=['./','./index.html','./app.js','./manifest.json','./assets/icon.svg','./assets/logo-wup.jpeg'];self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(ASSETS)))});self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))});
+self.addEventListener('install', event => {
+  self.skipWaiting();
+});
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+      .then(() => self.registration.unregister())
+      .then(() => self.clients.matchAll())
+      .then(clients => clients.forEach(client => client.navigate(client.url)))
+  );
+});
+self.addEventListener('fetch', event => {
+  event.respondWith(fetch(event.request));
+});

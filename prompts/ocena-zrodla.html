@@ -1,20 +1,4 @@
-<!doctype html>
-<html lang="pl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wykrywanie błędów i stronniczości</title>
-<style>body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f6f8fb;color:#172033}.wrap{max-width:980px;margin:0 auto;padding:32px 22px 54px}.back{display:inline-flex;margin-bottom:18px;border:1px solid #cfe0ff;background:#fff;color:#245fd0;border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:800}.card{background:#fff;border:1px solid #e4e9f2;border-radius:24px;box-shadow:0 10px 28px rgba(15,23,42,.055);padding:26px}h1{font-size:30px;line-height:1.15;margin:0 0 8px}.lead{color:#667085;line-height:1.55}.prompt{background:#182235;color:#edf4ff;border-radius:18px;padding:20px;white-space:pre-wrap;line-height:1.58;overflow:auto}.copy{border:0;background:#2f6fed;color:#fff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;margin-top:16px}.status{color:#667085;font-size:13px;margin-top:10px}@media(max-width:700px){.wrap{padding:20px 14px}.card{padding:18px}h1{font-size:25px}}</style>
-</head>
-<body>
-<div class="wrap">
-<a class="back" href="../index.html">← Wróć do panelu</a>
-<div class="card">
-<h1>Wykrywanie błędów i stronniczości</h1>
-<p class="lead">Pełny prompt do oceny jakości źródła, możliwych uprzedzeń i słabego rozumowania.</p>
-<div class="prompt" id="promptText">Działaj jak metodolog badań, krytyczny analityk i ewaluator jakości dowodów. Twoim zadaniem jest wykryć stronniczość, słabe rozumowanie, błędne założenia, problemy z wiarygodnością i niską jakość dowodów.
-
-Przeanalizowałem/przeanalizowałam poniższe źródło przez NotebookLM.
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wykrywanie błędów i stronniczości</title><style>body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f6f8fb;color:#172033}.wrap{max-width:980px;margin:0 auto;padding:32px 22px 54px}.back{display:inline-flex;margin-bottom:18px;border:1px solid #cfe0ff;background:#fff;color:#245fd0;border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:800}.card{background:#fff;border:1px solid #e4e9f2;border-radius:24px;box-shadow:0 10px 28px rgba(15,23,42,.055);padding:26px}h1{font-size:30px;line-height:1.15;margin:0 0 8px}.lead{color:#667085;line-height:1.55}.prompt{background:#182235;color:#edf4ff;border-radius:18px;padding:20px;white-space:pre-wrap;line-height:1.58;overflow:auto}.copy{border:0;background:#2f6fed;color:#fff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;margin-top:16px}.status{color:#667085;font-size:13px;margin-top:10px}@media(max-width:700px){.wrap{padding:20px 14px}.card{padding:18px}h1{font-size:25px}}</style></head><body><div class="wrap"><a class="back" href="../index.html">← Wróć do panelu</a><div class="card"><h1>Wykrywanie błędów i stronniczości</h1><p class="lead">Prompt do oceny jakości źródła i słabego rozumowania.</p><div class="prompt" id="promptText">Działaj jak metodolog badań, krytyczny analityk i ewaluator jakości dowodów.
 
 Informacje o źródle:
 - Streszczenie lub główne tezy: [WKLEJ]
@@ -23,71 +7,12 @@ Informacje o źródle:
 - Dlaczego analizuję to źródło: [OPCJONALNIE]
 
 Przygotuj:
+1. Możliwe stronniczości, interesy i założenia autora lub organizacji.
+2. Najmocniejszą tezę i ocenę jakości dowodów.
+3. Najsłabszą tezę i brakujące dowody.
+4. Brakujące perspektywy i kontrargumenty.
+5. Ocenę metodologii i wiarygodności.
+6. 3 źródła do triangulacji.
+7. Ocenę zaufania od 1 do 10 z uzasadnieniem.
 
-1. Możliwe stronniczości
-Wskaż prawdopodobne uprzedzenia, interesy, założenia lub światopogląd autora albo organizacji. Uwzględnij:
-- interes finansowy,
-- ideologię,
-- interes zawodowy,
-- narrację,
-- selekcję danych,
-- oczekiwania odbiorców.
-
-Wyjaśnij, jak te czynniki mogą wpływać na wnioski.
-
-2. Najmocniejsza teza
-Wskaż najmocniejszą lub najbardziej przekonującą tezę źródła. Oceń:
-- czy dowody rzeczywiście ją wspierają,
-- jak silne są dowody,
-- jaki poziom zaufania można jej przypisać,
-- jakie założenia są ukryte.
-
-3. Najsłabsza teza
-Wskaż najsłabszą, najmniej udokumentowaną lub najbardziej wątpliwą tezę. Wyjaśnij:
-- dlaczego jest słaba,
-- jakich dowodów brakuje,
-- gdzie są luki logiczne,
-- jak wyglądałby mocniejszy dowód.
-
-4. Brakujące perspektywy
-Wskaż kontrargumenty, odmienne punkty widzenia lub niewygodne dowody, których źródło nie omawia.
-
-5. Metodologia i wiarygodność
-Oceń:
-- wiarygodność źródła,
-- jakość dowodów,
-- metodologię,
-- nadmierne uogólnienia,
-- mylenie korelacji z przyczynowością,
-- wybiórcze dobieranie danych,
-- słabe porównania.
-
-6. Źródła do triangulacji
-Zaproponuj 3 dodatkowe źródła, ekspertów, badania lub perspektywy, które warto sprawdzić, aby uzyskać bardziej zrównoważony obraz. Wyjaśnij, co każde z nich wnosi.
-
-7. Ocena zaufania
-Nadaj źródłu ocenę od 1 do 10 pod względem:
-- jakości dowodów,
-- przejrzystości,
-- uczciwości intelektualnej,
-- niuansu,
-- rzetelności rozumowania.
-
-Wyjaśnij dokładnie, dlaczego źródło zasługuje na tę ocenę.
-
-Skup się na jakości dowodów, założeniach, interesach, sile rozumowania i uczciwości intelektualnej. Unikaj powierzchownej krytyki i ślepego sceptycyzmu.</div>
-<button class="copy" onclick="copyPrompt()">Kopiuj prompt</button>
-<div class="status" id="status"></div>
-</div>
-</div>
-<script>
-function copyPrompt(){
-  const text=document.getElementById('promptText').innerText;
-  navigator.clipboard.writeText(text).then(
-    ()=>document.getElementById('status').textContent='Prompt skopiowany do schowka.',
-    ()=>document.getElementById('status').textContent='Nie udało się skopiować automatycznie. Zaznacz tekst ręcznie.'
-  );
-}
-</script>
-</body>
-</html>
+Skup się na jakości dowodów, założeniach, interesach, sile rozumowania i uczciwości intelektualnej. Unikaj powierzchownej krytyki i ślepego sceptycyzmu.</div><button class="copy" onclick="copyPrompt()">Kopiuj prompt</button><div class="status" id="status"></div></div></div><script>function copyPrompt(){navigator.clipboard.writeText(document.getElementById('promptText').innerText).then(()=>document.getElementById('status').textContent='Prompt skopiowany do schowka.',()=>document.getElementById('status').textContent='Nie udało się skopiować automatycznie. Zaznacz tekst ręcznie.');}</script></body></html>

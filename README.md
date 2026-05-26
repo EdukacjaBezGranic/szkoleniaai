@@ -1,30 +1,33 @@
-# Panel szkolenia AI
+# Panel szkolenia AI - wersja stabilna v2
 
-Panel dla osoby prowadzącej szkolenie „Nowe kompetencje cyfrowe w praktyce - praktyczne wykorzystanie AI”.
+Ta paczka jest przygotowana do wrzucenia bezpośrednio do głównego katalogu repozytorium GitHub Pages.
 
-## Zawartość
+## Ważne
 
-- `index.html` - główna strona panelu,
-- `app.js` - logika ćwiczeń, narzędzi i generatora QR,
-- `assets/logo-wup.jpeg` - logo WUP,
-- `assets/icon.svg` - ikona aplikacji,
-- `prompts/` - osobne strony z pełnymi promptami,
-- `manifest.json` i `service-worker.js` - podstawowe pliki PWA.
+W ZIP-ie plik `index.html` jest na najwyższym poziomie. Po rozpakowaniu wrzuć na GitHub:
+- `index.html`
+- `assets/`
+- `prompts/`
+- `service-worker.js`
+- `reset-cache.html`
+- pozostałe pliki
 
-## Publikacja na GitHub Pages
+Nie wrzucaj samego folderu jako podfolderu, tylko jego zawartość.
 
-1. Utwórz nowe repozytorium na GitHubie.
-2. Wgraj całą zawartość folderu z paczki.
-3. Wejdź w `Settings` → `Pages`.
-4. Wybierz branch `main` i folder `/root`.
-5. Zapisz ustawienia.
-6. Po chwili GitHub pokaże link do strony.
+## Gdy po aktualizacji dalej widzisz starą wersję
 
-## Uwaga
+Otwórz:
+`https://TWOJ-ADRES-GITHUB-PAGES/reset-cache.html`
 
-Generator QR korzysta z zewnętrznego API do tworzenia obrazu kodu QR, dlatego wymaga internetu.
-Przycisk „Generator certyfikatów” ma link tymczasowy `#` i wymaga podmiany na właściwy adres.
+Potem wróć do `index.html` i odśwież stronę przez:
+- Mac: Cmd + Shift + R
+- Windows: Ctrl + F5
 
-## Aktualizacja ćwiczeń
+## Naprawione
 
-W tej wersji każde ćwiczenie ma warianty do losowania. Ćwiczenia dotyczące maili i notatek zawierają gotowe przykładowe treści do pracy z grupą.
+- ćwiczenia warsztatowe są wpisane bezpośrednio w HTML,
+- narzędzia AI są wpisane bezpośrednio w HTML,
+- ćwiczenia otwierają się z kafelków,
+- każde ćwiczenie ma warianty do losowania,
+- trudne maile i notatki mają gotowe przykłady,
+- prompty są w osobnych plikach HTML.
