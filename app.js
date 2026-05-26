@@ -131,12 +131,12 @@ email:[
 let currentExerciseType='prompt';
 function esc(s){return String(s).replace(/[&<>'"]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m];});}
 function init(){
-  document.getElementById('exerciseCards').innerHTML=exerciseCards.map(function(c){
-    return '<article class="card"><span class="tag">'+esc(c[1])+'</span><h3>'+esc(c[2])+'</h3><p>'+esc(c[3])+'</p><p class="small"><strong>Efekt:</strong> '+esc(c[4])+'</p><button class="btn" onclick="openExercise(\\''+c[0]+'\\')">Uruchom</button></article>';
-  }).join('');
-  document.getElementById('toolCards').innerHTML=tools.map(function(t){
-    return '<article class="card"><span class="tag">'+esc(t[0])+'</span><h3>'+esc(t[1])+'</h3><p>'+esc(t[2])+'</p><a class="btn" target="_blank" href="'+esc(t[3])+'">Otwórz</a></article>';
-  }).join('');
+  var toolContainer=document.getElementById('toolCards');
+  if(toolContainer){
+    toolContainer.innerHTML=tools.map(function(t){
+      return '<article class="card"><span class="tag">'+esc(t[0])+'</span><h3>'+esc(t[1])+'</h3><p>'+esc(t[2])+'</p><a class="btn" target="_blank" href="'+esc(t[3])+'">Otwórz</a></article>';
+    }).join('');
+  }
 }
 function pickExercise(type){var list=exercises[type]||exercises.prompt;return list[Math.floor(Math.random()*list.length)];}
 function renderExercise(e){
