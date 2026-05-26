@@ -1,5 +1,100 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Plan nauki dziedziny w 30 dni</title><style>body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f6f8fb;color:#172033}.wrap{max-width:920px;margin:0 auto;padding:32px 22px}.back{display:inline-flex;margin-bottom:18px;border:1px solid #cfe0ff;background:#fff;color:#245fd0;border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:800}.card{background:#fff;border:1px solid #e4e9f2;border-radius:24px;box-shadow:0 10px 28px rgba(15,23,42,.055);padding:26px}h1{font-size:30px;line-height:1.15;margin:0 0 8px}.lead{color:#667085;line-height:1.55}.prompt{background:#182235;color:#edf4ff;border-radius:18px;padding:20px;white-space:pre-wrap;line-height:1.55;overflow:auto}.copy{border:0;background:#2f6fed;color:#fff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;margin-top:16px}.status{color:#667085;font-size:13px;margin-top:10px}</style></head><body><div class="wrap"><a class="back" href="../index.html">← Wróć do panelu</a><div class="card"><h1>Plan nauki dziedziny w 30 dni</h1><p class="lead">Prompt do przygotowania systemu nauki.</p><div class="prompt" id="promptText">Pomóż mi zbudować wiedzę w obszarze: [DZIEDZINA].
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan nauki dziedziny w 30 dni</title>
+<style>body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f6f8fb;color:#172033}.wrap{max-width:980px;margin:0 auto;padding:32px 22px 54px}.back{display:inline-flex;margin-bottom:18px;border:1px solid #cfe0ff;background:#fff;color:#245fd0;border-radius:12px;padding:10px 14px;text-decoration:none;font-weight:800}.card{background:#fff;border:1px solid #e4e9f2;border-radius:24px;box-shadow:0 10px 28px rgba(15,23,42,.055);padding:26px}h1{font-size:30px;line-height:1.15;margin:0 0 8px}.lead{color:#667085;line-height:1.55}.prompt{background:#182235;color:#edf4ff;border-radius:18px;padding:20px;white-space:pre-wrap;line-height:1.58;overflow:auto}.copy{border:0;background:#2f6fed;color:#fff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;margin-top:16px}.status{color:#667085;font-size:13px;margin-top:10px}@media(max-width:700px){.wrap{padding:20px 14px}.card{padding:18px}h1{font-size:25px}}</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="../index.html">← Wróć do panelu</a>
+<div class="card">
+<h1>Plan nauki dziedziny w 30 dni</h1>
+<p class="lead">Pełny prompt do przygotowania 30-dniowego systemu nauki z zasobami, testami i praktycznymi zadaniami.</p>
+<div class="prompt" id="promptText">Jesteś ekspertem, badaczem i projektantem programów nauczania specjalizującym się w szybkim budowaniu kompetencji i pogłębionej wiedzy.
 
-Kontekst: poziom, cel, liczba godzin tygodniowo, styl nauki, docelowy poziom.
+Twoim zadaniem jest pomóc mi zbudować sensowną wiedzę w obszarze:
 
-Przygotuj: strategię nauki, 10 zasobów do NotebookLM, 5 ekspertów, plan tygodniowy na 30 dni, prompty do refleksji, 3 podstawowe pojęcia, testy tygodniowe i rezultat po 30 dniach.</div><button class="copy" onclick="copyPrompt()">Kopiuj prompt</button><div class="status" id="status"></div></div></div><script>function copyPrompt(){navigator.clipboard.writeText(document.getElementById('promptText').innerText).then(()=>document.getElementById('status').textContent='Prompt skopiowany do schowka.',()=>document.getElementById('status').textContent='Nie udało się skopiować automatycznie. Zaznacz tekst ręcznie.');}</script></body></html>
+[DZIEDZINA]
+
+Kontekst:
+- Mój obecny poziom wiedzy: [OPIS]
+- Dlaczego chcę się tego nauczyć: [POWÓD]
+- Liczba godzin tygodniowo: [LICZBA]
+- Preferowany styl nauki: [OPCJONALNIE]
+- Docelowy poziom: podstawowe zrozumienie / wiedza robocza / poziom ekspercki
+- Cel praktyczny, który ta nauka ma wesprzeć: [OPCJONALNIE]
+
+Zaprojektuj 30-dniowy system nauki nastawiony na zrozumienie, utrwalenie i praktyczne zastosowanie, a nie na nadmiar informacji.
+
+Przygotuj:
+
+1. Strategia nauki
+Podaj najlepsze ogólne podejście do szybkiego i głębokiego opanowania tej dziedziny w 30 dni.
+
+2. Zasoby do NotebookLM
+Zaproponuj 10 najbardziej wartościowych zasobów do wgrania do NotebookLM. Uwzględnij mieszankę:
+- książek,
+- artykułów,
+- raportów,
+- badań,
+- podcastów,
+- wywiadów,
+- studiów przypadku,
+- materiałów edukacyjnych wysokiej jakości.
+
+Przy każdym zasobie wyjaśnij:
+- dlaczego jest ważny,
+- co należy z niego wyciągnąć.
+
+3. Eksperci i praktycy
+Wskaż 5 najważniejszych osób, których warto poznać w tym obszarze. Przy każdej napisz:
+- w czym jest szczególnie dobra,
+- jaki model myślenia lub perspektywę wnosi.
+
+4. Plan tygodniowy na 30 dni
+Przygotuj szczegółowy plan nauki tydzień po tygodniu. Dla każdego tygodnia podaj:
+- główny cel,
+- co czytać, oglądać lub słuchać,
+- jak pracować z NotebookLM,
+- jak syntetyzować wiedzę,
+- jakie zadanie praktyczne wykonać.
+
+5. Prompty do refleksji
+Po każdej sesji nauki podaj najlepsze prompty do:
+- podsumowania wiedzy,
+- wykrycia luk,
+- przetestowania rozumienia,
+- zamiany wiedzy w działanie,
+- łączenia idei z różnych źródeł.
+
+6. Podstawowe pojęcia
+Wskaż 3 pojęcia, które trzeba zrozumieć przed przejściem do trudniejszych tematów. Wyjaśnij, dlaczego są najważniejsze.
+
+7. Testy tygodniowe
+Zaprojektuj test wiedzy na każdy tydzień. Uwzględnij:
+- pytania,
+- scenariusze praktyczne,
+- pytania refleksyjne,
+- sposób rozpoznania słabego rozumienia.
+
+8. Rezultat po 30 dniach
+Opisz, jaki model myślowy, ramę lub praktyczne zrozumienie powinienem/powinnam mieć po 30 dniach, jeśli nauka przebiegła dobrze.
+
+Priorytet: głębia, uporządkowane myślenie, praktyczne zrozumienie i długoterminowe utrwalenie. Unikaj przeładowania informacjami.</div>
+<button class="copy" onclick="copyPrompt()">Kopiuj prompt</button>
+<div class="status" id="status"></div>
+</div>
+</div>
+<script>
+function copyPrompt(){
+  const text=document.getElementById('promptText').innerText;
+  navigator.clipboard.writeText(text).then(
+    ()=>document.getElementById('status').textContent='Prompt skopiowany do schowka.',
+    ()=>document.getElementById('status').textContent='Nie udało się skopiować automatycznie. Zaznacz tekst ręcznie.'
+  );
+}
+</script>
+</body>
+</html>
