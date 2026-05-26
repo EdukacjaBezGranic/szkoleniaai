@@ -24,3 +24,7 @@ Panel dla osoby prowadzącej szkolenie „Nowe kompetencje cyfrowe w praktyce - 
 
 Generator QR korzysta z zewnętrznego API do tworzenia obrazu kodu QR, dlatego wymaga internetu.
 Przycisk „Generator certyfikatów” ma link tymczasowy `#` i wymaga podmiany na właściwy adres.
+
+## Aktualizacja ćwiczeń
+
+W tej wersji każde ćwiczenie ma warianty do losowania. Ćwiczenia dotyczące maili i notatek zawierają gotowe przykładowe treści do pracy z grupą.
